@@ -8,7 +8,7 @@ df1<-  df %>% filter(country=="Luxembourg")
 df1<- df1[,c(1:4)]
 
 
-########## ESTO SI ############
+########## Loop ############
 
 
 time_series <- unique(df1$site_id)
@@ -118,7 +118,11 @@ for(i in 1:length(time_series)){
 
 
 
-###Mathieu
+########################################################################
+########################           Mathieu      ########################
+########################################################################
+
+
 setwd("C:/Users/isma-/Downloads")
 
 HG <- read.csv2("Hungary.csv")
